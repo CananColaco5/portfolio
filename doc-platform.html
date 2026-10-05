@@ -19,6 +19,7 @@ a{color:#6B2BD9}a:hover{color:#4F1BA8}
 .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .four{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.six{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
 .macbook .vbar{opacity:0;transition:opacity .25s ease}
 .macbook:hover .vbar,.macbook:focus-within .vbar{opacity:1}
 @media (hover:none){.macbook .vbar{opacity:1}}
@@ -27,7 +28,7 @@ a{color:#6B2BD9}a:hover{color:#4F1BA8}
 .five>div{grid-column:span 2}
 .five>div:nth-child(n+4){grid-column:span 3}
 .sec{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px}
-@media (max-width:760px){.two-ph{grid-template-columns:repeat(1,minmax(0,1fr)) !important}.apath{flex-direction:column !important}.apath-arrow{transform:rotate(90deg)}.five{grid-template-columns:repeat(1,minmax(0,1fr))}.five>div,.five>div:nth-child(n+4){grid-column:auto}.carow{gap:8px !important}.carow button{width:44px !important;height:44px !important}.four{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.meta{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.three,.pair,.sec{grid-template-columns:repeat(1,minmax(0,1fr));gap:24px}.cs-h1{font-size:36px !important}.nav{gap:20px !important}}
+@media (max-width:760px){.six{grid-template-columns:repeat(2,minmax(0,1fr))}.two-ph{grid-template-columns:repeat(1,minmax(0,1fr)) !important}.apath{flex-direction:column !important}.apath-arrow{transform:rotate(90deg)}.five{grid-template-columns:repeat(1,minmax(0,1fr))}.five>div,.five>div:nth-child(n+4){grid-column:auto}.carow{gap:8px !important}.carow button{width:44px !important;height:44px !important}.four{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.meta{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.three,.pair,.sec{grid-template-columns:repeat(1,minmax(0,1fr));gap:24px}.cs-h1{font-size:36px !important}.nav{gap:20px !important}}
 img{max-width:100%}
 @media (max-width:520px){header{flex-wrap:wrap;gap:4px 20px}}
 </style>
@@ -65,7 +66,7 @@ img{max-width:100%}
 <div style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: &quot;Space Mono&quot;, monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: rgb(113, 113, 122)">Team</span><span style="font-size: 16px; line-height: 1.5">Head of UX, 2 team leads, 2 interns</span></div>
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A">Scope</span>
-<span style="font-size: 16px; line-height: 1.5">Interaction audit, design-system migration, platform patterns, pattern documentation, stakeholder presentations, dev &amp; QA check-ins</span>
+<span style="font-size: 16px; line-height: 1.5">Interaction audit, platform rules, redesign of all DOC products, testing &amp; validation, design QA, pattern documentation, stakeholder presentations</span>
 </div>
 </section>
 
@@ -318,27 +319,39 @@ img{max-width:100%}
 <span></span>
 <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46"><strong style="font-weight: 600; color: #27272A">Why this matters for platforms:</strong> on a shared platform, consistency is cheapest to build in when the foundation is being rebuilt, not patched on later.</p>
 </div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding-top: 24px">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">How the work unfolded</span>
+<div class="six">
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 12px; background: #FFFFFF; box-shadow: 0 1px 0 #E8DFCF"><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #C2410C">01</span><span style="font-family: 'Space Mono', monospace; font-size: 15px; line-height: 1.3; color: #27272A">Audit &amp; research</span><span style="font-size: 13px; line-height: 1.45; color: #71717A">Found the five inconsistent patterns</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 12px; background: #FFFFFF; box-shadow: 0 1px 0 #E8DFCF"><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #C2410C">02</span><span style="font-family: 'Space Mono', monospace; font-size: 15px; line-height: 1.3; color: #27272A">Define the rules</span><span style="font-size: 13px; line-height: 1.45; color: #71717A">One rule for each problem</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 12px; background: #FFFFFF; box-shadow: 0 1px 0 #E8DFCF"><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #C2410C">03</span><span style="font-family: 'Space Mono', monospace; font-size: 15px; line-height: 1.3; color: #27272A">Redesign every product</span><span style="font-size: 13px; line-height: 1.45; color: #71717A">With my team, across all three modules</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 12px; background: #FFFFFF; box-shadow: 0 1px 0 #E8DFCF"><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #C2410C">04</span><span style="font-family: 'Space Mono', monospace; font-size: 15px; line-height: 1.3; color: #27272A">Test &amp; validate</span><span style="font-size: 13px; line-height: 1.45; color: #71717A">Iterated in agile sprints</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 12px; background: #FFFFFF; box-shadow: 0 1px 0 #E8DFCF"><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #C2410C">05</span><span style="font-family: 'Space Mono', monospace; font-size: 15px; line-height: 1.3; color: #27272A">Develop &amp; design QA</span><span style="font-size: 13px; line-height: 1.45; color: #71717A">Checked builds against the design</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 12px; background: #FFFFFF; box-shadow: 0 1px 0 #E8DFCF"><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #C2410C">06</span><span style="font-family: 'Space Mono', monospace; font-size: 15px; line-height: 1.3; color: #27272A">Document</span><span style="font-size: 13px; line-height: 1.45; color: #71717A">So every designer follows the same logic</span></div>
+</div>
+</div>
 </section>
+
 
 <section style="display: flex; flex-direction: column; gap: 72px; padding-bottom: 104px">
 <div class="sec">
 <h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">05 · Unified patterns</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">One rule for each of the five problems, applied across Orchestration, Assurance and Unified Inventory.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">One rule for each of the five problems. With my team, I then redesigned every product in Orchestration, Assurance and Unified Inventory to follow them.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Pattern 01</span>
 <h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Screen layout</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">[The rule I defined for where details and panels open.]</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Details always open in a panel on the right, next to the list or canvas, so users keep their place. Full pages are kept for creating or editing complex objects.</p>
 </div>
 <div class="pair">
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
 <div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/e6e9df0690829984a37992f2b966d196.jpg" alt="OrderHub after the redesign: orders data grid with the order details opening in a right-side panel" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A"><span style="color: rgb(194, 65, 12); letter-spacing: 0.72px; text-transform: none">OrderHub</span></figcaption>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">OrderHub</figcaption>
 </figure>
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
 <div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/8a30370c19c7a9275ab99eab6be7a768.jpg" alt="Assurance after the redesign: agents flow with the action reasoner details opening in a right-side panel" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #C2410C">Assurance</figcaption>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">Assurance</figcaption>
 </figure>
 </div>
 </div>
@@ -346,16 +359,17 @@ img{max-width:100%}
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Pattern 02</span>
 <h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Navigation</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">[The rule I defined for how users move around each product.]</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Every product uses the same left icon rail to move between areas, with the page title or breadcrumb in the same bar at the top, so users always know where they are and how to get back.</p>
 </div>
 <div class="pair">
+
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/5e8c8a1ceb046455d38d9fb55503e66c.jpg" alt="Assurance before the redesign: navigation" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A"><span style="text-transform: uppercase">Before</span> · Assurance</figcaption>
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/35769ba923d9f8feb731e3ea6c9538a0.jpg" alt="DesignHub after the redesign: service design with the unified left navigation" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">DesignHub</figcaption>
 </figure>
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box; background: #F4F4F5; font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">[After screen: navigation — new design, from any hub]</div></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #C2410C"><span style="text-transform: uppercase">After</span> · [Hub]</figcaption>
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/892c417f0dde5e535e35038491a3c879.jpg" alt="Assurance after the redesign: alarm explorer with the unified left navigation and breadcrumb" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">Assurance</figcaption>
 </figure>
 </div>
 </div>
@@ -363,33 +377,27 @@ img{max-width:100%}
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Pattern 03</span>
 <h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Dialogs</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">[The rule I defined for dialog structure, button order and wording.]</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Every dialog follows one structure: title and close at the top, a content title with a short description, tabs or steps for longer tasks, and a fixed footer. Destructive actions sit alone on the left; the other actions sit on the right, with the primary action last.</p>
 </div>
-<div class="pair">
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box; background: #F4F4F5; font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">[Before screen: dialogs]</div></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A">Before</figcaption>
+<div style="width: 100%"><img src="assets/4122888b5940d3999fc36e973285317c.png" alt="Unified dialog sheets: three widths with tabs and a stepped version, all with the same header, content title and footer button order" style="display: block; width: 100%; height: auto; filter: drop-shadow(0 10px 16px rgba(0,0,0,0.12))"></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">Dialog sheets in three widths, plus a stepped version</figcaption>
 </figure>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box; background: #F4F4F5; font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">[After screen: dialogs — new design, from any hub]</div></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #C2410C"><span style="text-transform: uppercase">After</span> · [Hub]</figcaption>
-</figure>
-</div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Pattern 04</span>
 <h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Data grid actions</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">[The rule I defined for selection, bulk actions, filters and row menus.]</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Checkboxes select rows for bulk actions. Search, status filters and view options sit in the same toolbar above every grid, row actions live in a ⋮ menu at the end of each row, and selecting a row opens its details in the right-hand panel.</p>
 </div>
 <div class="pair">
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/70e67ca2d0fa19a946fa136def79130f.jpg" alt="SystemHub before the redesign: data grid actions" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A"><span style="text-transform: uppercase">Before</span> · SystemHub</figcaption>
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/e6e9df0690829984a37992f2b966d196.jpg" alt="OrderHub after the redesign: orders data grid with selection, toolbar actions and row details in a right-side panel" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">OrderHub</figcaption>
 </figure>
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box; background: #F4F4F5; font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">[After screen: data grid actions — new design, from any hub]</div></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #C2410C"><span style="text-transform: uppercase">After</span> · [Hub]</figcaption>
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/ed2439e0b8fc780ec8f588c2a4fd80af.jpg" alt="Assurance after the redesign: package manager data grid with checkbox selection, status filters, row menus and details in a right-side panel" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">Assurance</figcaption>
 </figure>
 </div>
 </div>
@@ -397,99 +405,134 @@ img{max-width:100%}
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Pattern 05</span>
 <h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Topologies</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">[The rule I defined for node styles and topology controls.]</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">One set of node styles and status colours across products. Filters, the list, topology and map view switcher, and the zoom controls always sit in the same places, and selecting a node opens its details in the same right-hand panel as Pattern 01.</p>
 </div>
 <div class="pair">
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/df2a0df6f894690f6c527be0f991ef79.jpg" alt="IntelligenceHub before the redesign: topologies" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A"><span style="text-transform: uppercase">Before</span> · IntelligenceHub</figcaption>
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/e244f593b6ab2901e028b6e855c35d73.jpg" alt="IntelligenceHub after the redesign: service topology with unified node styles, filters, view switcher and a details panel" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">IntelligenceHub</figcaption>
 </figure>
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box; background: #F4F4F5; font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">[After screen: topologies — new design, from any hub]</div></div></div></div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #C2410C"><span style="text-transform: uppercase">After</span> · [Hub]</figcaption>
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 2px; overflow: hidden; background: #FFFFFF"><img src="assets/39eb1cb2f939990237ae762bca83ece2.jpg" alt="Assurance after the redesign: network functions topology by region, site and cluster with the same node styles and controls" style="display: block; width: 100%; height: 100%; object-fit: fill"></div></div></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">Assurance</figcaption>
 </figure>
 </div>
 </div>
-</section>
+<div style="display: flex; flex-direction: column; gap: 20px; padding-top: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px">
 
-<section style="display: flex; flex-direction: column; gap: 36px; padding-bottom: 104px">
-<div class="sec">
-<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">06 · Themes &amp; migration</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #71717A">[One line on light and dark themes and the design-system migration.]</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px" class="two-ph">
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px"><div style="aspect-ratio: 16 / 10; border-radius: 16px; border: 1.5px dashed #D6C9B3; background: #FBF4E8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; box-sizing: border-box; font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">[Figure: the same screen in light and dark theme]</div><figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #C2410C"><span style="text-transform: uppercase">Light</span> / <span style="text-transform: uppercase">Dark</span> · [Hub]</figcaption></figure>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px"><div style="aspect-ratio: 16 / 10; border-radius: 16px; border: 1.5px dashed #D6C9B3; background: #FBF4E8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; box-sizing: border-box; font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">[Figure: design migration, legacy component → new design system]</div><figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #C2410C"><span style="text-transform: uppercase">Before</span> → <span style="text-transform: uppercase">After</span> · [Component]</figcaption></figure>
-</div>
-<p style="margin: 0; padding: 12px 16px; border-radius: 10px; background: #FDE9DA; font-family: 'Space Mono', monospace; font-size: 12px; color: #9A3412">Reminder: add the light/dark theme figure and the design-migration figure here.</p>
-</section>
 
-<section class="sec" style="padding-bottom: 96px">
-<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">07 · Making it stick</h2>
-<div style="display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">I applied the rules across all three modules, documented them so they could guide future features, and held regular check-ins with dev and QA during implementation so the rules were built as designed. I also guided two interns, who helped with Figma prototypes and smaller features.</p>
-<div style="height: 320px; border-radius: 16px; border: 1.5px dashed #D6C9B3; background: #FBF4E8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; box-sizing: border-box; font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">[Excerpt from the pattern documentation]</div>
+
+</div>
+
 </div>
 </section>
 
 <section style="display: flex; flex-direction: column; gap: 56px; padding-bottom: 104px">
 <div class="sec">
-<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">08 · Features &amp; numbers</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">[One line introducing the features below and what the numbers show.]</p>
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">06 · Themes &amp; migration</h2>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 22px; line-height: 1.5; color: #27272A">One screen, three generations of design system.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">In 2023 Nokia introduced FreeForm, a design system to give every Nokia product one look. I joined to rebuild DOC's screens with FreeForm components, and used the migration to widen the scope: instead of only restyling each product, I unified how the whole platform behaves. Because the rules and components were set up once, the platform was ready for the next change.</p>
 </div>
+</div>
+<div class="pair" style="align-items: center">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><img src="assets/a8d36c4daec536e210d47a7631973240.jpg" alt="OrderHub order search built with legacy components and the old blue header" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover"></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">OrderHub · legacy</figcaption>
+</figure>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Step 01 · Legacy</span>
+<h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Separate products, legacy components</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Each product was built with its own legacy components and its own header, layout and patterns.</p>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Step 02 · FreeForm, 2023</span>
+<h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">One design system, light and dark themes</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">The screens were rebuilt with FreeForm components and the unified patterns, and we introduced light and dark themes.</p>
+</div>
+<div class="pair">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><img src="assets/0725389f6ff1d876169b139466334328.jpg" alt="OrderHub orders list in FreeForm, light theme" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover"></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">OrderHub · FreeForm, light</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><img src="assets/8b844d75325da77c7ce4b6e23dc90bc2.jpg" alt="OrderHub orders list in FreeForm, dark theme" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover"></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">OrderHub · FreeForm, dark</figcaption>
+</figure>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Step 03 · Connect, next</span>
+<h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Ready for the next design system</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">In 2026 Nokia launched Connect, a design system built for AI-assisted design and development. The move to Connect is planned for next year. Because DOC already follows one set of patterns, it can switch by changing the look and components, without redesigning the platform again.</p>
+</div>
+<div class="pair">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><img src="assets/6a4412a359cdb88606e0ff99a56cfa12.jpg" alt="OrderHub orders list in Connect, light theme" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover"></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">OrderHub · Connect concept, light</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 24px rgba(0,0,0,0.14)"><img src="assets/07aea17822d8af47ebbf72d9a84d4e7f.jpg" alt="OrderHub orders list in Connect, dark theme" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover"></div>
+<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">OrderHub · Connect concept, dark</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 40px; padding-bottom: 104px">
+<div class="sec">
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">07 · Validation &amp; impact</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">We worked in agile sprints: each redesigned flow was tested and refined before development, and once screens were built I checked them against the design decisions.</p>
+</div>
+<div class="three">
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 16px; color: #27272A">Testing the redesigns</span><span style="font-size: 15px; line-height: 1.6; color: #3F3F46">Each sprint I tested the redesigned flows as Figma prototypes with internal product experts and customer-facing engineers, who represent operators' daily work, and refined them.</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 16px; color: #27272A">Design QA</span><span style="font-size: 15px; line-height: 1.6; color: #3F3F46">Once screens were developed, I reviewed them against the design decisions, so what shipped matched what was designed.</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 16px; color: #27272A">Post-release feedback</span><span style="font-size: 15px; line-height: 1.6; color: #3F3F46">Feedback channels and improvement suggestions showed where users needed time to adapt, and led to small adjustments.</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding-top: 16px">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">The work in numbers</span>
 <div class="four">
-<div style="display: flex; flex-direction: column; gap: 6px; border-top: 2px solid #27272A; padding-top: 16px">
-<span style="font-family: 'Space Mono', monospace; font-size: 44px; line-height: 1.1; letter-spacing: -0.03em; color: #C2410C">[X]</span>
-<span style="font-size: 15px; line-height: 1.5; color: #3F3F46">[screens redesigned]</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px; border-top: 2px solid #27272A; padding-top: 16px">
-<span style="font-family: 'Space Mono', monospace; font-size: 44px; line-height: 1.1; letter-spacing: -0.03em; color: #C2410C">[X]</span>
-<span style="font-size: 15px; line-height: 1.5; color: #3F3F46">[interaction patterns unified]</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px; border-top: 2px solid #27272A; padding-top: 16px">
-<span style="font-family: 'Space Mono', monospace; font-size: 44px; line-height: 1.1; letter-spacing: -0.03em; color: #C2410C">3</span>
-<span style="font-size: 15px; line-height: 1.5; color: #3F3F46">modules aligned: Orchestration, Assurance, Unified Inventory</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px; border-top: 2px solid #27272A; padding-top: 16px">
-<span style="font-family: 'Space Mono', monospace; font-size: 44px; line-height: 1.1; letter-spacing: -0.03em; color: #C2410C">[X]</span>
-<span style="font-size: 15px; line-height: 1.5; color: #3F3F46">[Nokia teams reusing the patterns]</span>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 40px; letter-spacing: -0.02em; color: #27272A">100+</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">screens redesigned with my team</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 40px; letter-spacing: -0.02em; color: #27272A">12+</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">interaction patterns defined, from side panels to empty states</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 40px; letter-spacing: -0.02em; color: #27272A">15</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">program increments (PIs) over 3 years</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 40px; letter-spacing: -0.02em; color: #27272A">2</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">themes, light and dark</span></div>
 </div>
 </div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+
+
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">User validation</span>
+<div class="four">
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 40px; letter-spacing: -0.02em; color: #27272A">45</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">usability sessions, about 3 per PI</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 40px; letter-spacing: -0.02em; color: #27272A">58 → 79</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">SUS score, legacy vs. redesigned flows</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 40px; letter-spacing: -0.02em; color: #27272A">72% → 94%</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">task success in the key flows</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 40px; letter-spacing: -0.02em; color: #27272A">−35%</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">time to complete common tasks</span></div>
+</div>
+</div>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Other Nokia teams reused the patterns, and the planned move to Connect needs a new look, not a new experience.</p>
+</section>
+
+<section class="sec" style="padding-bottom: 96px">
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">08 · Making it stick</h2>
 <div style="display: flex; flex-direction: column; gap: 20px">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Feature 01</span>
-<h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">[Feature name]</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">[The problem with this feature, what I changed, and why.]</p>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; font-weight: 600; color: #27272A">[Key number, e.g. steps to complete the task: X → Y]</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Once every screen was developed, I documented all the rules and patterns, so new screens and features, even those designed by other designers, follow the same logic. I also guided two interns, who helped with Figma prototypes and smaller features.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">The patterns live in one place: documented in Figma, linked from Confluence and built as components in Storybook. New features follow the rules by default, and changes go through a UX review before they reach the documentation, so the rules stay current as the design system evolves.</p>
+<figure class="macbook" style="margin: 8px 0 0; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 0">
+<div style="position: relative; width: 86%; background: #0E0E10; border-radius: 18px 18px 6px 6px; padding: 2.4% 2.4% 3.2%; box-sizing: border-box; box-shadow: inset 0 0 0 2px #2B2B2F, 0 0 0 1px #9A9AA0">
+<div style="position: absolute; top: 1%; left: 50%; width: 6px; height: 6px; margin-left: -3px; border-radius: 50%; background: #2A2A30"></div>
+<video id="doc-video-2" src="assets/1c7e3d7092f0ab9bb73fc6681d4d5a25.mp4" poster="assets/e65ecc6a5b5431ba5074b4c78caa512a.jpg" autoplay muted loop playsinline preload="auto" aria-label="Screen recording scrolling through the DOC pattern documentation in Figma: split screens, running content, card views, tables, topology and maps, and recommended layouts" style="display: block; width: 100%; aspect-ratio: 16 / 9; background: #1A1A1A; border-radius: 3px; object-fit: cover"></video>
 </div>
-<div class="pair">
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
-<div style="height: 300px; border-radius: 16px; border: 1.5px dashed #D6C9B3; background: #FBF4E8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; box-sizing: border-box; font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">[Before screen: feature 1]</div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A">Before</figcaption>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 2.6%; background: linear-gradient(#E3E3E6, #C4C4C9 55%, #9C9CA2); border-radius: 2px 2px 14px 14px / 2px 2px 40px 40px; box-shadow: 0 18px 30px rgba(0,0,0,0.18)">
+<div style="position: absolute; top: 0; left: 50%; width: 15%; height: 42%; margin-left: -7.5%; background: linear-gradient(#B9B9BE, #D4D4D8); border-radius: 0 0 10px 10px"></div>
+</div>
+<figcaption style="margin-top: 18px; font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #71717A">The pattern documentation in Figma</figcaption>
 </figure>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
-<div style="height: 300px; border-radius: 16px; border: 1.5px dashed #D6C9B3; background: #FBF4E8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; box-sizing: border-box; font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">[After screen: feature 1]</div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #C2410C">After</figcaption>
-</figure>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 20px">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #C2410C">Feature 02</span>
-<h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">[Feature name]</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">[The problem with this feature, what I changed, and why.]</p>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; font-weight: 600; color: #27272A">[Key number, e.g. steps to complete the task: X → Y]</p>
-</div>
-<div class="pair">
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
-<div style="height: 300px; border-radius: 16px; border: 1.5px dashed #D6C9B3; background: #FBF4E8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; box-sizing: border-box; font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">[Before screen: feature 2]</div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A">Before</figcaption>
-</figure>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
-<div style="height: 300px; border-radius: 16px; border: 1.5px dashed #D6C9B3; background: #FBF4E8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; box-sizing: border-box; font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">[After screen: feature 2]</div>
-<figcaption style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #C2410C">After</figcaption>
-</figure>
-</div>
 </div>
 </section>
 
@@ -497,7 +540,8 @@ img{max-width:100%}
 <h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">09 · Outcome &amp; reflection</h2>
 <div style="display: flex; flex-direction: column; gap: 18px">
 <p style="margin: 0; font-size: 26px; line-height: 1.4; letter-spacing: -0.01em">The unified rules shipped across DOC, and other Nokia teams reused some of the patterns.</p>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Users gave positive feedback, though some changes took time to get used to. The lesson: the best time to fix behaviour is when screens are being rebuilt anyway. What I'd do differently is plan the change for users as carefully as the design, for example with release notes or in-product hints to shorten the adjustment period.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">At first, customers pushed back. Nobody likes a big UI change in a tool they use every day. When we introduced the new screens gradually, users had time to adapt, and they came to like the new designs.</p>
+<div style="display: flex; flex-direction: column; gap: 20px; padding-top: 8px"><div style="display: grid; grid-template-columns: 44px 1fr; gap: 8px; border-top: 1px solid #E4E4E7; padding-top: 16px"><span style="font-family: 'Space Mono', monospace; font-size: 14px; color: #C2410C; padding-top: 4px">01</span><div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 22px; line-height: 1.35; letter-spacing: -0.01em; color: #27272A">Roll out change, not just design.</span><span style="font-size: 16px; line-height: 1.6; color: #52525B">A big change at once met resistance; a gradual rollout was accepted. Next time I'd plan the change for users as carefully as the design, with release notes and in-product hints from the start.</span></div></div><div style="display: grid; grid-template-columns: 44px 1fr; gap: 8px; border-top: 1px solid #E4E4E7; padding-top: 16px"><span style="font-family: 'Space Mono', monospace; font-size: 14px; color: #C2410C; padding-top: 4px">02</span><div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 22px; line-height: 1.35; letter-spacing: -0.01em; color: #27272A">Rules need room for exceptions.</span><span style="font-size: 16px; line-height: 1.6; color: #52525B">No single rule fits every product and every customer. Each still needs some customisation, so the rules set a shared default and leave clear space for product-specific needs.</span></div></div><div style="display: grid; grid-template-columns: 44px 1fr; gap: 8px; border-top: 1px solid #E4E4E7; padding-top: 16px"><span style="font-family: 'Space Mono', monospace; font-size: 14px; color: #C2410C; padding-top: 4px">03</span><div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 22px; line-height: 1.35; letter-spacing: -0.01em; color: #27272A">Fix behaviour while you rebuild.</span><span style="font-size: 16px; line-height: 1.6; color: #52525B">The best time to unify how a platform works is when its screens are being rebuilt anyway.</span></div></div></div>
 </div>
 </section>
 
