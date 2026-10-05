@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CityQuest — case study</title>
+<meta name="description" content="Case study: CityQuest, a mobile app for urban exploration and citizen participation.">
+<meta name="author" content="Canan Colaço">
+<meta property="og:title" content="CityQuest — case study">
+<meta property="og:description" content="Case study: CityQuest, a mobile app for urban exploration and citizen participation.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FEF7EC}
+a{color:#6B2BD9}a:hover{color:#4F1BA8}
+.meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.four{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;align-items:center}
+.proc{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:36px;align-items:start}
+.titlerow{display:flex;gap:56px;align-items:center}
+.sec{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px}
+@media (max-width:760px){.titlerow{flex-direction:column-reverse;align-items:flex-start;gap:24px}.titlerow img{width:160px !important}.meta{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.three,.four,.split,.proc,.sec{grid-template-columns:repeat(1,minmax(0,1fr));gap:24px}.cs-h1{font-size:38px !important}.nav{gap:20px !important}}
+img{max-width:100%}
+@media (max-width:520px){header{flex-wrap:wrap;gap:4px 20px}}
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; background: #FEF7EC; color: #27272A; font-family: 'Manrope', system-ui, sans-serif">
+<div style="max-width: 1040px; margin: 0 auto; padding: 0 24px; box-sizing: border-box">
+
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 32px 0">
+<a href="index.html" aria-label="Canan Colaço, home" style="display: flex; align-items: center; gap: 12px; min-height: 44px; color: #27272A; text-decoration: none"><span style="position: relative; width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><span style="position: absolute; inset: 2px; background: #F2A36B; border-radius: 8px; transform: rotate(-10deg)"></span><span style="position: relative; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 16px; color: #27272A">C</span></span><span style="font-family: 'Space Mono', monospace; font-size: 16px; letter-spacing: -0.01em; color: #27272A">Canan Colaço</span></a>
+<nav class="nav" style="display: flex; gap: 32px; font-family: 'Space Mono', monospace; font-size: 15px">
+<a href="index.html" style="color: #3F3F46; text-decoration: none; padding: 12px 0">Case Studies</a>
+<a href="about.html" style="color: #3F3F46; text-decoration: none; padding: 12px 0">About</a>
+</nav>
+</header>
+
+<section style="display: flex; flex-direction: column; gap: 22px; padding: 72px 0 56px">
+<a href="index.html" style="font-family: 'Space Mono', monospace; font-size: 14px; color: #52525B; text-decoration: none; padding: 12px 0; align-self: flex-start">← All case studies</a>
+<div class="titlerow">
+<div style="display: flex; flex-direction: column; gap: 22px; flex: 1 1 0; min-width: 0">
+<div style="display: flex; gap: 10px; flex-wrap: wrap">
+<span style="font-family: 'Space Mono', monospace; font-size: 12px; background: #27272A; color: #FEF7EC; padding: 6px 10px; border-radius: 20px">ISTAR · ISCTE</span>
+<span style="font-family: 'Space Mono', monospace; font-size: 12px; border: 1px solid #C9B6F5; background: #EFE8FD; color: #3F3F46; padding: 5px 10px; border-radius: 20px">Concept</span>
+<span style="font-family: 'Space Mono', monospace; font-size: 12px; border: 1px solid #C9B6F5; background: #EFE8FD; color: #3F3F46; padding: 5px 10px; border-radius: 20px">Mobile app</span>
+<span style="font-family: 'Space Mono', monospace; font-size: 12px; border: 1px solid #C9B6F5; background: #EFE8FD; color: #3F3F46; padding: 5px 10px; border-radius: 20px">Gamification</span>
+</div>
+<h1 class="cs-h1" style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 52px; line-height: 1.12; letter-spacing: -0.03em">CityQuest</h1>
+<p style="margin: 0; max-width: 720px; font-size: 22px; line-height: 1.5; color: #3F3F46">An AR city game that turns walking and cycling into a treasure hunt, designed to get people moving, exploring and meeting in their own city.</p>
+</div>
+<img src="assets/b85cf71c700718a4ed8326d260f52b12.png" alt="CityQuest logo" style="display: block; width: 260px; height: auto; flex-shrink: 0">
+</div>
+</section>
+
+<section class="meta" style="padding: 28px 0 64px; border-top: 1px solid #E8DFCF">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A">Role</span>
+<span style="font-size: 16px; line-height: 1.5">Solo UX Designer &amp; Researcher</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A">Timeline</span>
+<span style="font-size: 16px; line-height: 1.5">3 months (design) · 2022</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A">Type</span>
+<span style="font-size: 16px; line-height: 1.5">Concept for a research proposal</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A">Scope</span>
+<span style="font-size: 16px; line-height: 1.5">Research, user flows, wireflows, UI &amp; style guide, animated prototypes</span>
+</div>
+</section>
+
+
+
+<section style="margin: 0 auto 120px; width: 100%; max-width: 831px">
+<img src="assets/1ec3e742829154b2a5c5bebfd9294ce3.png" alt="CityQuest Explore screen in an iPhone, with nearby Lisbon places and mood categories (Nature, Museum, Cafe, Hiking, Viewpoint, Food, Art, Music) expanding out of the phone" style="display: block; width: 100%; height: auto; aspect-ratio: 828 / 565; object-fit: cover; object-position: 0% 50%; object-view-box: inset(0.0003% 16.5323% 0.0003% 0%)">
+</section><section class="sec" style="padding-bottom: 96px">
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">01 · The challenge</h2>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-size: 26px; line-height: 1.4; letter-spacing: -0.01em">Sedentary lifestyles are rising, and most fitness apps motivate people who are already active. Could the city itself become the reason to move?</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">CityQuest started as part of a research proposal at ISTAR exploring how digital tools can support physical and mental well-being in urban life. My brief was to design a concept that encourages active mobility (walking and cycling), urban exploration and social interaction.</p>
+</div>
+</section>
+
+<section class="sec" style="padding-bottom: 96px">
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">02 · My role</h2>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">I worked on CityQuest alone, from framing the research to the final prototypes:</p>
+<ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.8; color: #3F3F46">
+<li>Turned the proposal's goals into a product concept</li>
+<li>Ran desk research, a competitor review and expert interviews</li>
+<li>Mapped the user flow and wireflow</li>
+<li>Designed the UI, the style guide and the animated prototypes</li>
+</ul>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 36px; padding-bottom: 104px">
+<div class="sec">
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">03 · Research</h2>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">I combined three sources: literature on gamification and physical activity, a review of apps like Pokémon GO, Strava and geocaching apps, and interviews with four experts from different disciplines. Together they helped me check the concept against the city, against technical feasibility and against project scope.</p>
+<div class="four">
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; background: #EFE8FD; border-radius: 12px">
+<span style="font-size: 15px; font-weight: 600">Urban planner</span>
+<span style="font-size: 14px; line-height: 1.5; color: #52525B">Which places and routes make sense</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; background: #EFE8FD; border-radius: 12px">
+<span style="font-size: 15px; font-weight: 600">Software engineers ×2</span>
+<span style="font-size: 14px; line-height: 1.5; color: #52525B">Whether AR and location tracking are feasible</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; background: #EFE8FD; border-radius: 12px">
+<span style="font-size: 15px; font-weight: 600">Project manager</span>
+<span style="font-size: 14px; line-height: 1.5; color: #52525B">Scope and priorities</span>
+</div>
+</div>
+</div>
+</div>
+<div class="three">
+<div style="display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; border-radius: 16px; padding: 28px; border: 1px solid #EDE4D3">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #6B2BD9">Insight 01</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; line-height: 1.35">Rewards need a place.</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #52525B">Points and badges fade quickly. Rewards tied to real locations give people a reason to go somewhere new.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; border-radius: 16px; padding: 28px; border: 1px solid #EDE4D3">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #6B2BD9">Insight 02</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; line-height: 1.35">Plans beat goals.</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #52525B">People are more likely to go out when someone is expecting them, and less likely when it's only a personal target.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; border-radius: 16px; padding: 28px; border: 1px solid #EDE4D3">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #6B2BD9">Insight 03</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; line-height: 1.35">Deciding is the hardest step.</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #52525B">“Where should I go?” stops people before they start, so the first step has to be effortless.</p>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 72px; padding-bottom: 104px">
+<div class="sec">
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">04 · Design decisions</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Each feature had to earn its place by prompting a real-world action.</p>
+</div>
+<div class="split">
+<div style="position: relative; height: 460px; display: flex; align-items: center; justify-content: center">
+<div style="position: absolute; inset: 6% 18%; background: #DDEF6B; border-radius: 24px; transform: rotate(6deg)"></div>
+<div style="position: relative"><div style="width: 200px; height: 424px; background: #17131F; border-radius: 32px; padding: 8px; box-sizing: border-box; box-shadow: 0 24px 50px rgba(0,0,0,0.22)">
+<img src="assets/1022a12f181bc3ecac7e2c89d72e4dd6.gif" alt="Animated demo: the Lisbon Botanical Garden place page with details and a Play button to start the gem hunt" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 24px">
+</div></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">Decision 01</span>
+<h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Hidden gems as the reward</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Virtual gems hidden around the city, found by scanning with the camera and kept in a personal collection. They give every walk a goal and make new places worth visiting.</p>
+</div>
+</div>
+<div class="split">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">Decision 02</span>
+<h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Start from a mood, not a map</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">The Explore screen asks “What are you in the mood for?” and offers categories like Nature, Museum, Café, Hiking and Art, so a decision becomes one tap.</p>
+</div>
+<div style="position: relative; height: 460px; display: flex; align-items: center; justify-content: center">
+<div style="position: absolute; inset: 6% 18%; background: #F7B8CF; border-radius: 24px; transform: rotate(-6deg)"></div>
+<div style="position: relative"><div style="width: 200px; height: 424px; background: #17131F; border-radius: 32px; padding: 8px; box-sizing: border-box; box-shadow: 0 24px 50px rgba(0,0,0,0.22)">
+<img src="assets/d12b2005dfa808bd470d130cdc2d63f5.gif" alt="Animated demo of browsing nearby places and mood categories" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 24px">
+</div></div>
+</div>
+</div>
+<div class="split">
+<div style="position: relative; height: 460px; display: flex; align-items: center; justify-content: center">
+<div style="position: absolute; inset: 6% 18%; background: #F2A36B; border-radius: 24px; transform: rotate(5deg)"></div>
+<div style="position: relative"><div style="width: 200px; height: 424px; background: #17131F; border-radius: 32px; padding: 8px; box-sizing: border-box; box-shadow: 0 24px 50px rgba(0,0,0,0.22)">
+<img src="assets/09e80748f4bf543fce1ade6ceea80445.gif" alt="Animated demo: opening a museum's details and tapping Make Plans to schedule a visit" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 24px">
+</div></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #71717A">Decision 03</span>
+<h3 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -0.01em">Plan it with friends</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Users can save places, schedule a visit and invite friends, turning a solo intention into a shared plan.</p>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 36px; padding-bottom: 104px">
+<div class="sec">
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">Process</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">I mapped the full journey before designing screens, then turned it into a wireflow of the main screens and how they connect.</p>
+</div>
+<figure style="margin: 0 auto; width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 12px">
+<img src="assets/63a48fb4cbeff2596b4b943998bd6251.png" alt="CityQuest user flow from launch and onboarding to searching, choosing a location, scanning and finding a hidden gem" style="display: block; width: 100%; border-radius: 16px">
+<figcaption style="font-size: 14px; color: #52525B">User flow: from onboarding to finding a hidden gem.</figcaption>
+</figure>
+<div class="proc">
+<figure style="margin: 0 auto; width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 12px">
+<img src="assets/70053e4cb4f4848fc93bc0046c5c8fd1.png" alt="Wireflow of the main CityQuest screens" style="display: block; width: 100%; border-radius: 16px">
+<figcaption style="font-size: 14px; color: #52525B">Wireframe: the main screens and how they connect.</figcaption>
+</figure>
+
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 40px; padding-bottom: 104px">
+<div class="sec">
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">05 · How I measure success</h2>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">Each design decision came with a measurable target. The plan: a moderated test with 5–8 people on the animated prototype, then a two-week pilot with a small group in one neighbourhood.</p>
+</div>
+</div>
+<div class="four" style="display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #C2410C">Target</span><span style="font-family: 'Space Mono', monospace; font-size: 34px; letter-spacing: -0.02em; color: #27272A">80%</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">of first-time users find a hidden gem without help</span><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">Tests: hidden gems as the reward</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #C2410C">Target</span><span style="font-family: 'Space Mono', monospace; font-size: 34px; letter-spacing: -0.02em; color: #27272A">&lt; 30 s</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">from opening Explore to choosing a place</span><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">Tests: start from a mood, not a map</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #C2410C">Target</span><span style="font-family: 'Space Mono', monospace; font-size: 34px; letter-spacing: -0.02em; color: #27272A">40%</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">of users come back for a second quest within a week</span><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">Tests: rewards need a place</span></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 2px solid #27272A; padding-top: 18px"><span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #C2410C">Target</span><span style="font-family: 'Space Mono', monospace; font-size: 34px; letter-spacing: -0.02em; color: #27272A">50%</span><span style="font-size: 15px; line-height: 1.5; color: #3F3F46">of plans shared with friends turn into real visits</span><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">Tests: plan it with friends</span></div>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #71717A">I'd also run a SUS questionnaire after the moderated test, aiming for a score of 75+.</p>
+</section>
+
+<section class="sec" style="padding-bottom: 96px">
+<h2 style="margin: 0; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #71717A; padding-top: 6px">06 · What I took away</h2>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 20px"><div style="display: grid; grid-template-columns: 44px 1fr; gap: 8px; border-top: 1px solid #E4E4E7; padding-top: 16px"><span style="font-family: 'Space Mono', monospace; font-size: 14px; color: #C2410C; padding-top: 4px">01</span><div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 22px; line-height: 1.35; letter-spacing: -0.01em; color: #27272A">Start from motivation, not features.</span><span style="font-size: 16px; line-height: 1.6; color: #52525B">Moods and rewards shaped the flow more than the map did.</span></div></div><div style="display: grid; grid-template-columns: 44px 1fr; gap: 8px; border-top: 1px solid #E4E4E7; padding-top: 16px"><span style="font-family: 'Space Mono', monospace; font-size: 14px; color: #C2410C; padding-top: 4px">02</span><div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 22px; line-height: 1.35; letter-spacing: -0.01em; color: #27272A">Set the metric before the screen.</span><span style="font-size: 16px; line-height: 1.6; color: #52525B">Every decision came with a target, so design debates became testable.</span></div></div><div style="display: grid; grid-template-columns: 44px 1fr; gap: 8px; border-top: 1px solid #E4E4E7; padding-top: 16px"><span style="font-family: 'Space Mono', monospace; font-size: 14px; color: #C2410C; padding-top: 4px">03</span><div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 22px; line-height: 1.35; letter-spacing: -0.01em; color: #27272A">Success happens outside the app.</span><span style="font-size: 16px; line-height: 1.6; color: #52525B">The real KPI was a visit, not a tap.</span></div></div></div>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F46">That's how I approach enterprise tools today: design for the action, then measure it.</p>
+</div>
+</section>
+
+<section aria-label="More work" style="padding: 40px 0 96px; border-top: 1px solid #E8DFCF; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap">
+<a href="doc-platform.html" style="display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-decoration: none; padding: 8px 0"><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">Previous</span><span style="font-family: 'Space Mono', monospace; font-size: 20px; color: #6B2BD9">← Digital Operations Center</span></a>
+<a href="research.html" style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px; text-decoration: none; padding: 8px 0"><span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #71717A">Next</span><span style="font-family: 'Space Mono', monospace; font-size: 20px; color: #6B2BD9">Research &amp; Publications →</span></a>
+</section>
+
+</div>
+
+</div>
+</body>
+</html>
